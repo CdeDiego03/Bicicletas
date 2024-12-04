@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Bicis</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__info">
+                <div class="logo">
+                    <img src="resources/img/logo.png" alt="Logo Tienda de Bicis" class="logo__img">
+                </div>
+                <div class="header__top">
+                    <p class="header__contact"><i class="fas fa-phone-alt"></i> +34 123 456 789 | <i class="fas fa-envelope"></i> info@tiendadebicis.com</p>
+                </div>
+                <div class="header__main">
+                    <h1 class="header__title">Tienda de Bicis</h1>
+                    <p class="header__subtitle">Explora el mundo sobre dos ruedas</p>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#inicio" class="menu__link">Inicio</a></li>
+                        <li class="menu__item"><a href="#productos" class="menu__link">Productos</a></li>
+                        <li class="menu__item"><a href="#nosotros" class="menu__link">Nosotros</a></li>
+                        <li class="menu__item"><a href="#blog" class="menu__link">Blog</a></li>
+                        <li class="menu__item"><a href="#contacto" class="menu__link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero__content">
+            <h2>Encuentra la bicicleta perfecta para ti</h2>
+            <p>Explora nuestra amplia selección de bicicletas de montaña, urbanas y eléctricas.</p>
+            <a href="#productos" class="btn btn--primary">Ver productos</a>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="productos">
+        <h2 class="section__title">Nuestros Productos</h2>
+        <p class="section__description">Elige entre nuestras categorías destacadas para encontrar tu bicicleta ideal.</p>
+        <div class="productos__categories">
+            <article class="productos__category">
+                <h3>Bicicletas de Montaña</h3>
+                <img src="resources/img/biciMontaña.png.jpg" alt="Bicicleta de Montaña">
+                <p>Resistentes y confiables para tus aventuras más extremas.</p>
+                <a class="btn btn--secondary" onclick="toggleVisibility('mountain-bikes')">Ver más</a>
+                <div id="mountain-bikes" class="productos__hidden">
+                    <ul>
+                        <li>Bicicleta Montaña 1</li>
+                        <li>Bicicleta Montaña 2</li>
+                        <li>Bicicleta Montaña 3</li>
+                        <li>Bicicleta Montaña 4</li>
+                        <li>Bicicleta Montaña 5</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="productos__category">
+                <h3>Bicicletas Urbanas</h3>
+                <img src="resources/img/biciUrbana.png.jpg" alt="Bicicleta de Montaña">
+                <p>Resistentes y confiables para tus aventuras más extremas.</p>
+                <a class="btn btn--secondary" onclick="toggleVisibility('urban-bikes')">Ver más</a>
+                <div id="urban-bikes" class="productos__hidden">
+                    <ul>
+                        <li>Bicicleta Urbana 1</li>
+                        <li>Bicicleta Urbana 2</li>
+                        <li>Bicicleta Urbana 3</li>
+                        <li>Bicicleta Urbana 4</li>
+                        <li>Bicicleta Urbana 5</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="productos__category">
+                <h3>Bicicletas Electricas</h3>
+                <img src="resources/img/biciEléctrica.png.jpg" alt="Bicicleta de Montaña">
+                <p>Resistentes y confiables para tus aventuras más extremas.</p>
+                <a class="btn btn--secondary" onclick="toggleVisibility('electric-bikes')">Ver más</a>
+                <div id="electric-bikes" class="productos__hidden">
+                    <ul>
+                        <li>Bicicleta Eléctrica 1</li>
+                        <li>Bicicleta Eléctrica 2</li>
+                        <li>Bicicleta Eléctrica 3</li>
+                        <li>Bicicleta Eléctrica 4</li>
+                        <li>Bicicleta Eléctrica 5</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="about">
+        <h2 class="section__title">Sobre Nosotros</h2>
+        <div class="about__content">
+            <div class="about__text">
+                <p>En Tienda de Bicis, somos apasionados por las bicicletas. Con más de 10 años de experiencia, ofrecemos las mejores marcas y un servicio excepcional para ciclistas de todos los niveles.</p>
+                <ul>
+                    <li>Servicio técnico especializado</li>
+                    <li>Asesoramiento personalizado</li>
+                    <li>Amplia variedad de productos</li>
+                </ul>
+            </div>
+            <div class="about__image">
+                <img src="https://via.placeholder.com/600x400" alt="Sobre Nosotros">
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="blog">
+        <h2 class="section__title">Últimos Artículos</h2>
+        <div class="blog__posts">
+            <article class="blog__post">
+                <img src="https://via.placeholder.com/300x200" alt="Post 1">
+                <h3>Cómo elegir la bicicleta ideal</h3>
+                <p>Conoce los aspectos más importantes para seleccionar la bicicleta que mejor se adapte a tus necesidades.</p>
+                <a href="#" class="btn btn--link">Leer más</a>
+            </article>
+            <article class="blog__post">
+                <img src="https://via.placeholder.com/300x200" alt="Post 2">
+                <h3>Los mejores accesorios para ciclistas</h3>
+                <p>Descubre los accesorios imprescindibles para disfrutar de una experiencia de ciclismo completa.</p>
+                <a href="#" class="btn btn--link">Leer más</a>
+            </article>
+            <article class="blog__post">
+                <img src="https://via.placeholder.com/300x200" alt="Post 3">
+                <h3>Rutas recomendadas para ciclistas</h3>
+                <p>Explora rutas impresionantes que puedes recorrer con tu bicicleta.</p>
+                <a href="#" class="btn btn--link">Leer más</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <h2 class="section__title">Contáctanos</h2>
+        <form class="contact__form">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <button type="submit" class="btn btn--primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p>&copy; 2024 Tienda de Bicis | Todos los derechos reservados.</p>
+            <ul class="footer__social">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- script -->
+     <script src="resources/js/script.js"></script>
+</body>
+</html>
